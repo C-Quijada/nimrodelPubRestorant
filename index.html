@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pub Restaurant Nimrode</title>
+    <link rel="icon" type="image/png" href="assets/img/n.png">
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+</head>
+
+<body>
+    <!--   inicio del navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="Assets/Img/n.png" alt="Logo del pubs restorant" width="80px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nuestros Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="desplegarContactanos()" href="#formulario1">Contactanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="desplegarReservanos()" href="#formulario2">Reserva</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--seccion destacados -->
+    <section class="container " id="cabecera">
+        <div class="row justify-content-center">
+
+            <div class="col-12  text-center mt-3">
+                <h1 class="text-secondary mt-3">Pub Restaurant Nimrode</h1>
+                <h2 class="m-5">Destacados de la semana</h2>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-3">
+                <div class="card mx-auto">
+                    <img src="Assets/Img/bebidas.jpg" class="img-fluid card-img" alt="bebidas" >
+                    <div class="card-body">
+                        <h5 class="card-title text-center">GASEOSAS</h5>
+                        <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-3">
+                <div class="card mx-auto">
+                    <img src="Assets/Img/tablas.jpg" class="img-fluid card-img" alt="bebidas" >
+                    <div class="card-body">
+                        <h5 class="card-title text-center">TABLAS</h5>
+                        <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mb-3">
+                <div class="card mx-auto">
+                    <img src="Assets/Img/shop.jpeg" class="img-fluid card-img" alt="bebidas" >
+                    <div class="card-body">
+                        <h5 class="card-title text-center">SHOP CERVEZA</h5>
+                        <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--   formulario contacto-->
+    <section class="container d-none d-lg-block mb-3" id="formulario1">
+
+        <div class="row justify-content-center">
+            <div class="col-9 p-3 bg-secondary">
+                <form action="#" method="get" class="text-center row" id="form1" >
+                    <h3 class="text-center text-light">Comuniquemonos</h2>
+                        <label for="nombre" class="form-label text-light">Nombre:</label>
+                        <input class="" type="text" name="nombre" id="nombre" placeholder="Maria Vargas" >
+                        <br>
+                        <label for="correo" class="form-label text-light">Correo:</label>
+                        <input class="" type="email" name="correo" id="correo" placeholder="MariaVargas@correo.com" >
+                        <br>
+                        <label for="telefono" class="form-label text-light">Teléfono:</label>
+                        <input class="" type="tel" name="telefono" id="telefono" placeholder="+56 902658847" >
+                        <br>
+                        <label for="motivo" class="form-label text-light">Motivo:</label>
+                        <input class="" type="text" name="motivo" id="motivo" >
+                        <br>
+                        <textarea name="cajatexto" id="cajatexto" cols="30" rows="10" ></textarea>
+                        <br>
+                        <input type="submit" id="enviar">
+                        <br>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!--    formualario reserva-->
+    <section class="container d-none d-lg-block mb-3" id="formulario2">
+
+        <div class="row justify-content-center">
+            <div class="col-9 bg-secondary p-3">
+                <form action="#" method="get" class="text-center row" id="form2" >
+                    <h3 class="text-center text-light">Reserva</h2>
+                        <label for="nombre" class="form-label text-light">Nombre:</label>
+                        <input class="" type="text" name="nombre" id="nombre-reserva" placeholder="xxxxxx">
+                        <br>
+                        <label for="correo" class="form-label text-light">Correo:</label>
+                        <input class="" type="email" name="correo" id="correo-reserva" placeholder="xxx@xxx.xxx">
+                        <br>
+                        <label for="telefono" class="form-label text-light">Teléfono:</label>
+                        <input class="" type="tel" name="telefono" id="telefono-reserva" placeholder="+56 902658847">
+                        <br>
+                        <label for="fecha" class="form-label text-light">Fecha:</label>
+                        <input class="" type="date" name="fecha" id="fecha-reserva">
+                        <br>
+                        <label for="hora" class="form-label text-light">Hora:</label>
+                        <input class="" type="time" name="hora" id="hora-reserva">
+                        <br>
+                        <label for="cantidadAsis" class="text-light">Cantidad Asistentes:</label>
+                        <input class="" type="number" name="cantidadAsis" id="cantidadAsis-reserva">
+                        <br>
+                        <input type="submit" value="Reservar" >
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-12">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Assets/Img/imgSlide/vino.jpg" class="d-block w-100 img-fluid" alt="botella de vinos a la venta">
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/Img/imgSlide/mojito.jpg" class="d-block w-100 img-fluid" alt="mojitos a la venta">
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/Img/imgSlide/chorillana.jpg" class="d-block w-100 img-fluid" alt="las mejores chorrillanas">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+        </div>
+    </section>
+    
+    
+    <footer>
+        <p>Todos los derechos reserbados R</p>
+    </footer>
+
+
+    <div class="ventanaModal container-fluid d-none" id="ventanaModal">
+       <div class="row justify-content-center align-items-center">
+       <div class="col-12">
+        
+       </div>
+        <div class="col-9 col-lg-8 my-5 bg-dark pb-5">
+            <button class="btn btn-dark" id="cerrar">X</button>
+            <div class="row">
+                
+                <div class="col-2">
+                    
+                </div>
+                <div class="col-10">
+                    <div class="card d-flex justify-content-center align-items-center" style="max-width: 50rem;">
+                        <div class="card-body">
+                            
+                        </div>
+                        <img src="" class=" img-fluid" id="imgModal"   alt="bebidas">
+                        
+                      </div>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+
+
+
+
+    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="Assets/js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+h2 {
+    text-decoration: overline;
+
+}
+body{
+    position: relative;
+}
+
+footer {
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    background-image: url(../Img/fondo.jpg);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 50% 1%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-img {
+    max-height: 230px;
+    background-color: aqua;
+}
+
+.ventanaModal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.667);
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+
