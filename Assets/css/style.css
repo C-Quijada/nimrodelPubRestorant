@@ -36,4 +36,10 @@ footer {
     z-index: 100;
 }
 
+.carousel-item{
+    height: 550px;
+}
 
+.mt-55{
+    margin-top: 200px;
+}
